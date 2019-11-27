@@ -6,7 +6,7 @@ class Acronym
   #
   # abbreviate
   # 
-  # @param [String]  
+  # @param [String] string
   # @return [String]
   def self.abbreviate(string)
     string.split(/[ ,_-]+/).map(&:chr).map(&:upcase).join
