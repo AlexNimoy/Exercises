@@ -11,7 +11,6 @@ class Pangram
   # Input will not contain non-ASCII symbols.
   #
   # @param sentence [String]
-  # @return [Boolean]
   def self.pangram?(sentence)
     ('a'..'z').all? { |letter| sentence.downcase.include?(letter) }
   end

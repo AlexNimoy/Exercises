@@ -7,8 +7,6 @@ class Luhn
   # Numbers.
   #
   # @param [String] card_number
-  #
-  # @return [Boolean]
   def self.valid?(card_number)
     card_number
       .gsub(/\s+/, '')

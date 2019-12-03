@@ -15,8 +15,6 @@ class Isogram
   # The word *isograms*, however, is not an isogram, because the s repeats.  
   #
   # @param input [String] a word or phrase
-  #
-  # @return [Boolean]
   def self.isogram?(input)
     letters = input.downcase.chars - [' ', '-']
     letters == letters.uniq
