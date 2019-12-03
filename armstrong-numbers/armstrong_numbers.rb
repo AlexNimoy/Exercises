@@ -13,7 +13,6 @@ class ArmstrongNumbers
   # Write some code to determine whether a number is an Armstrong number.
   # 
   # @param num [Integer]
-  # @return [Boolean]
   def self.include?(num)
     # num == num.digits.then { |dig| dig.sum { |d| d**dig.size } }
    num == num.digits.sum { |n| n ** num.digits.size }
